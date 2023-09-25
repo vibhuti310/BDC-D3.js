@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Line Chart</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <fieldset>
+            <legend>Toggle color scheme</legend>
+            <ul class="controls-list">
+                <li>
+                    <input type="radio" name="color scheme" value="purple" id="c-purple" checked>
+                    <label for="c-purple">Purple</label>
+                </li>
+                <li>
+                    <input type="radio" name="color scheme" value="red" id="c-red">
+                    <label for="c-red">Red</label>
+                </li>
+                <li>
+                    <input type="radio" name="color scheme" value="blue" id="c-blue">
+                    <label for="c-blue">Blue</label>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+    <div class="chart-wrapper" data-wrapper>
+        <h3 data-heading>Weekly downloads</h3>
+        <div class="chart-info">
+            <p data-total>200,000</p>
+        </div>
+        <figure data-chart></figure>
+    </div>
+
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
